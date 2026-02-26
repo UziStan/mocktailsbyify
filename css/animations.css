@@ -104,10 +104,10 @@
 
 @keyframes accentGlow {
   0%, 100% {
-    text-shadow: 0 0 0 transparent;
+    text-shadow: 0 0 8px rgba(0, 148, 90, 0.3);
   }
   50% {
-    text-shadow: 0 0 30px rgba(255, 71, 87, 0.35), 0 0 60px rgba(255, 71, 87, 0.15);
+    text-shadow: 0 0 25px rgba(0, 148, 90, 0.45), 0 0 50px rgba(255, 136, 0, 0.2);
   }
 }
 
@@ -272,11 +272,11 @@
 .hero__accent {
   background: linear-gradient(
     90deg,
-    var(--coral) 0%,
-    var(--citrus) 25%,
-    var(--coral) 50%,
-    var(--berry) 75%,
-    var(--coral) 100%
+    var(--palm) 0%,
+    var(--citrus) 30%,
+    var(--coral) 55%,
+    var(--berry) 80%,
+    var(--palm) 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
