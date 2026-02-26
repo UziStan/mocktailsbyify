@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="mocktailsbyify — Premium mocktail catering for weddings, birthdays, corporate events, and private parties. Bespoke non-alcoholic drink menus crafted with care.">
+  <meta name="theme-color" content="#1B6B4A">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="mocktailsbyify — Premium Mocktail Catering">
+  <meta property="og:description" content="Bespoke mocktail menus for your weddings, birthdays, corporate events, and private parties. Crafted with care, served with joy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mocktailsbyify.com">
+
+  <title>mocktailsbyify — Premium Mocktail Catering for Events</title>
+
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════ -->
+  <header class="nav" id="nav" role="banner">
+    <div class="container flex--between nav__inner">
+      <a href="#" class="nav__logo" aria-label="mocktailsbyify home">
+        <span class="nav__logo-mock">mocktails</span><span class="nav__logo-byify">byify</span>
+      </a>
+
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#menu" class="nav__link">Menu</a>
+        <a href="#testimonials" class="nav__link">Reviews</a>
+        <a href="#gallery" class="nav__link">Gallery</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta">Book Your Event</a>
+
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__accent"></div>
+      <nav class="mobile-menu__nav">
+        <a href="#about" class="mobile-menu__link">About</a>
+        <a href="#services" class="mobile-menu__link">Services</a>
+        <a href="#menu" class="mobile-menu__link">Menu</a>
+        <a href="#testimonials" class="mobile-menu__link">Reviews</a>
+        <a href="#gallery" class="mobile-menu__link">Gallery</a>
+        <a href="#contact" class="mobile-menu__link">Contact</a>
+        <a href="#contact" class="btn btn--primary btn--large mobile-menu__cta">Book Your Event</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════
+         HERO
+         ═══════════════════════════════════ -->
+    <section class="hero section" id="hero">
+      <!-- Decorative blobs -->
+      <div class="hero__blobs" aria-hidden="true">
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="hero__blob hero__blob--3"></div>
+        <!-- Inline SVG decorations -->
+        <svg class="hero__leaf" viewBox="0 0 120 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M60 10C60 10 20 60 20 110C20 140 38 170 60 170C82 170 100 140 100 110C100 60 60 10 60 10Z" stroke="var(--palm)" stroke-width="2" fill="var(--palm)" fill-opacity="0.06" opacity="0.5"/>
+          <path d="M60 30V160" stroke="var(--palm)" stroke-width="1.2" opacity="0.35"/>
+          <path d="M60 60C45 75 35 90 33 105" stroke="var(--palm)" stroke-width="1.2" fill="none" opacity="0.25"/>
+          <path d="M60 80C75 95 85 110 87 125" stroke="var(--palm)" stroke-width="1.2" fill="none" opacity="0.25"/>
+          <path d="M60 100C48 110 42 120 40 135" stroke="var(--palm)" stroke-width="1" fill="none" opacity="0.2"/>
+        </svg>
+        <svg class="hero__citrus" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="45" stroke="var(--citrus)" stroke-width="2" fill="var(--citrus)" fill-opacity="0.04" opacity="0.4"/>
+          <circle cx="50" cy="50" r="35" stroke="var(--citrus)" stroke-width="1.2" opacity="0.25"/>
+          <line x1="50" y1="10" x2="50" y2="90" stroke="var(--citrus)" stroke-width="1" opacity="0.2"/>
+          <line x1="10" y1="50" x2="90" y2="50" stroke="var(--citrus)" stroke-width="1" opacity="0.2"/>
+          <line x1="22" y1="22" x2="78" y2="78" stroke="var(--citrus)" stroke-width="1" opacity="0.18"/>
+          <line x1="78" y1="22" x2="22" y2="78" stroke="var(--citrus)" stroke-width="1" opacity="0.18"/>
+        </svg>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__label">Mocktail Catering for Life's Best Moments</p>
+        <h1 class="hero__heading">
+          Beautifully <em class="hero__accent">Refreshing</em> Drinks for Every Celebration
+        </h1>
+        <p class="hero__subtitle">
+          We craft bespoke non-alcoholic cocktails that delight your guests and elevate any occasion — from intimate dinners to grand weddings.
+        </p>
+        <div class="hero__ctas">
+          <a href="#menu" class="btn btn--primary btn--large">See Our Drinks</a>
+          <a href="#contact" class="btn btn--outline btn--large">Book an Event</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="var(--bark-muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="wave-divider wave-divider--cream-deep" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="var(--cream-deep)"/>
+      </svg>
+    </div>
+
+    <!-- ═══════════════════════════════════
+         ABOUT
+         ═══════════════════════════════════ -->
+    <section class="about section bg-cream-deep" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text">
+            <p class="section__label reveal" style="--stagger:0">Our Story</p>
+            <h2 class="section__heading reveal" style="--stagger:1">Crafted with Care, Served with Joy</h2>
+            <p class="about__body reveal" style="--stagger:2">
+              What started as a passion for creating beautiful, alcohol-free drinks for friends has blossomed into a full catering experience. At mocktailsbyify, every drink is handcrafted using fresh, seasonal ingredients — because your guests deserve something extraordinary.
+            </p>
+            <p class="about__body reveal" style="--stagger:3">
+              Whether it's a sun-soaked garden wedding or an intimate birthday dinner, we bring the bar to you — complete with bespoke menus, stunning presentation, and drinks that taste as good as they look.
+            </p>
+          </div>
+          <div class="about__visual reveal--scale" style="--stagger:2" aria-hidden="true">
+            <div class="about__circle about__circle--citrus"></div>
+            <div class="about__circle about__circle--palm"></div>
+            <div class="about__circle about__circle--coral"></div>
+            <div class="about__circle about__circle--lime"></div>
+          </div>
+        </div>
+
+        <div class="about__values">
+          <div class="card card--accent-palm reveal" style="--stagger:1">
+            <div class="about__value-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M18 3C18 3 6 14 6 22C6 28.6 11.4 33 18 33C24.6 33 30 28.6 30 22C30 14 18 3 18 3Z" stroke="var(--palm)" stroke-width="1.5" fill="none"/>
+                <path d="M18 12V27" stroke="var(--palm)" stroke-width="1" opacity="0.5"/>
+                <path d="M13 20C13 20 15.5 24 18 24C20.5 24 23 20 23 20" stroke="var(--palm)" stroke-width="1" fill="none" opacity="0.5"/>
+              </svg>
+            </div>
+            <h4 class="about__value-title">Farm Fresh Ingredients</h4>
+            <p class="about__value-desc text-muted">Seasonal fruits, herbs, and botanicals sourced fresh for every event.</p>
+          </div>
+
+          <div class="card card--accent-citrus reveal" style="--stagger:2">
+            <div class="about__value-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <rect x="6" y="8" width="24" height="20" rx="3" stroke="var(--citrus)" stroke-width="1.5" fill="none"/>
+                <path d="M6 14H30" stroke="var(--citrus)" stroke-width="1"/>
+                <path d="M14 14V28" stroke="var(--citrus)" stroke-width="1" opacity="0.5"/>
+                <circle cx="10" cy="11" r="1" fill="var(--citrus)" opacity="0.5"/>
+                <circle cx="14" cy="11" r="1" fill="var(--citrus)" opacity="0.5"/>
+              </svg>
+            </div>
+            <h4 class="about__value-title">Custom Menus</h4>
+            <p class="about__value-desc text-muted">Every menu is designed around your event's theme, palette, and preferences.</p>
+          </div>
+
+          <div class="card card--accent-coral reveal" style="--stagger:3">
+            <div class="about__value-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M18 6L22 14H30L24 20L26 28L18 23L10 28L12 20L6 14H14L18 6Z" stroke="var(--coral)" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h4 class="about__value-title">Full Event Service</h4>
+            <p class="about__value-desc text-muted">From setup to cleanup — we handle everything so you can enjoy the party.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="wave-divider wave-divider--cream" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,20 C480,70 960,0 1440,40 L1440,80 L0,80 Z" fill="var(--cream)"/>
+      </svg>
+    </div>
+
+    <!-- ═══════════════════════════════════
+         SERVICES
+         ═══════════════════════════════════ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="services__header">
+          <p class="section__label reveal" style="--stagger:0">What We Do</p>
+          <h2 class="section__heading reveal" style="--stagger:1">For Every Occasion</h2>
+          <p class="section__subtext reveal" style="--stagger:2">
+            From grand celebrations to intimate gatherings — we bring craft mocktails that match the moment.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <div class="services__card services__card--featured reveal" style="--stagger:1" data-accent="palm">
+            <div class="services__card-accent"></div>
+            <h3 class="services__card-title">Weddings</h3>
+            <p class="services__card-desc">Make your special day even more memorable with a curated mocktail bar. Custom drinks to match your colors and theme.</p>
+            <span class="services__card-tag">Most Popular</span>
+          </div>
+
+          <div class="services__card reveal" style="--stagger:2" data-accent="citrus">
+            <div class="services__card-accent"></div>
+            <h3 class="services__card-title">Birthday Parties</h3>
+            <p class="services__card-desc">Fun, colorful drinks that wow guests of all ages. From elegant adult birthdays to vibrant kids' celebrations.</p>
+          </div>
+
+          <div class="services__card reveal" style="--stagger:3" data-accent="coral">
+            <div class="services__card-accent"></div>
+            <h3 class="services__card-title">Corporate Events</h3>
+            <p class="services__card-desc">Professional, sophisticated beverages for team events, launches, and corporate gatherings.</p>
+          </div>
+
+          <div class="services__card reveal" style="--stagger:4" data-accent="champagne">
+            <div class="services__card-accent"></div>
+            <h3 class="services__card-title">Dinner Parties</h3>
+            <p class="services__card-desc">Intimate pairings that complement your menu. Each course deserves its own signature sip.</p>
+          </div>
+
+          <div class="services__card reveal" style="--stagger:5" data-accent="lime">
+            <div class="services__card-accent"></div>
+            <h3 class="services__card-title">Private Events</h3>
+            <p class="services__card-desc">Baby showers, engagement parties, anniversaries — we craft drinks for life's sweetest milestones.</p>
+          </div>
+
+          <div class="services__card reveal" style="--stagger:6" data-accent="palm">
+            <div class="services__card-accent"></div>
+            <h3 class="services__card-title">Custom Experiences</h3>
+            <p class="services__card-desc">Have something unique in mind? We love a creative challenge. Let's build your dream mocktail experience together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave divider -->
+    <div class="wave-divider wave-divider--cream-deep" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,60 C240,20 480,70 720,40 C960,10 1200,50 1440,30 L1440,80 L0,80 Z" fill="var(--cream-deep)"/>
+      </svg>
+    </div>
+
+    <!-- ═══════════════════════════════════
+         SIGNATURE DRINKS
+         ═══════════════════════════════════ -->
+    <section class="menu section bg-cream-deep" id="menu">
+      <div class="container">
+        <p class="section__label reveal" style="--stagger:0">The Menu</p>
+        <h2 class="section__heading reveal" style="--stagger:1">Our Signature Sips</h2>
+        <p class="section__subtext reveal" style="--stagger:2">
+          A taste of what we pour. Every event gets a fully custom menu — these are just some of our crowd favorites.
+        </p>
+
+        <div class="menu__grid">
+          <div class="menu__card reveal--scale" style="--stagger:1">
+            <div class="menu__card-bg menu__card-bg--sunset"></div>
+            <div class="menu__card-content">
+              <h3 class="menu__card-name">Tropical Sunset</h3>
+              <div class="menu__card-pills">
+                <span class="pill">Mango</span>
+                <span class="pill">Passionfruit</span>
+                <span class="pill">Lime</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card reveal--scale" style="--stagger:2">
+            <div class="menu__card-bg menu__card-bg--garden"></div>
+            <div class="menu__card-content">
+              <h3 class="menu__card-name">Emerald Garden</h3>
+              <div class="menu__card-pills">
+                <span class="pill">Cucumber</span>
+                <span class="pill">Mint</span>
+                <span class="pill">Elderflower</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card reveal--scale" style="--stagger:3">
+            <div class="menu__card-bg menu__card-bg--berry"></div>
+            <div class="menu__card-content">
+              <h3 class="menu__card-name">Berry Bliss</h3>
+              <div class="menu__card-pills">
+                <span class="pill">Raspberry</span>
+                <span class="pill">Blueberry</span>
+                <span class="pill">Rose</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__card reveal--scale" style="--stagger:4">
+            <div class="menu__card-bg menu__card-bg--golden"></div>
+            <div class="menu__card-content">
+              <h3 class="menu__card-name">Golden Hour</h3>
+              <div class="menu__card-pills">
+                <span class="pill">Pineapple</span>
+                <span class="pill">Ginger</span>
+                <span class="pill">Turmeric</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="menu__footer reveal" style="--stagger:5">
+          Every event gets a <strong>custom menu</strong> crafted just for you.
+          <a href="#contact" class="menu__footer-link">Let's design yours &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         HOW IT WORKS
+         ═══════════════════════════════════ -->
+    <section class="process section" id="process">
+      <div class="container">
+        <p class="section__label reveal" style="--stagger:0">How It Works</p>
+        <h2 class="section__heading reveal" style="--stagger:1">From First Sip to Last Toast</h2>
+
+        <div class="process__steps">
+          <div class="process__step reveal--left" style="--stagger:1">
+            <div class="process__number">1</div>
+            <h3 class="process__title">Consult</h3>
+            <p class="process__desc">Tell us about your event — the vibe, guest count, and any flavors you love. We'll listen and dream up something special.</p>
+          </div>
+
+          <div class="process__line reveal" style="--stagger:2" aria-hidden="true"></div>
+
+          <div class="process__step reveal--left" style="--stagger:3">
+            <div class="process__number">2</div>
+            <h3 class="process__title">Curate</h3>
+            <p class="process__desc">We design a bespoke mocktail menu tailored to your occasion — complete with tasting notes and presentation concepts.</p>
+          </div>
+
+          <div class="process__line reveal" style="--stagger:4" aria-hidden="true"></div>
+
+          <div class="process__step reveal--left" style="--stagger:5">
+            <div class="process__number">3</div>
+            <h3 class="process__title">Celebrate</h3>
+            <p class="process__desc">We show up, set up, and pour. Your guests enjoy expertly crafted drinks while you enjoy the moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         TESTIMONIALS
+         ═══════════════════════════════════ -->
+    <section class="testimonials section bg-palm" id="testimonials">
+      <div class="container container--narrow">
+        <p class="section__label testimonials__label reveal" style="--stagger:0">Kind Words</p>
+        <h2 class="section__heading testimonials__heading reveal" style="--stagger:1">What Our Clients Say</h2>
+
+        <div class="testimonials__quote-mark" aria-hidden="true">&ldquo;</div>
+
+        <div class="testimonials__carousel" aria-live="polite">
+          <div class="testimonials__slide is-active" data-slide="0">
+            <blockquote class="testimonials__quote">
+              &ldquo;Our wedding guests are STILL talking about the drinks. The Tropical Sunset was the star of the evening. Absolutely phenomenal service from start to finish.&rdquo;
+            </blockquote>
+            <div class="testimonials__attribution">
+              <span class="testimonials__name">Amara & David</span>
+              <span class="testimonials__event">Wedding Reception — Lagos</span>
+            </div>
+          </div>
+
+          <div class="testimonials__slide" data-slide="1">
+            <blockquote class="testimonials__quote">
+              &ldquo;We booked mocktailsbyify for our company retreat and it was the highlight of the weekend. Professional, creative, and the drinks were out of this world.&rdquo;
+            </blockquote>
+            <div class="testimonials__attribution">
+              <span class="testimonials__name">Chidi O.</span>
+              <span class="testimonials__event">Corporate Retreat</span>
+            </div>
+          </div>
+
+          <div class="testimonials__slide" data-slide="2">
+            <blockquote class="testimonials__quote">
+              &ldquo;My daughter's birthday party was magical thanks to these amazing mocktails. The kids loved the colorful drinks and the adults were just as impressed. Can't recommend enough!&rdquo;
+            </blockquote>
+            <div class="testimonials__attribution">
+              <span class="testimonials__name">Funke A.</span>
+              <span class="testimonials__event">Birthday Party</span>
+            </div>
+          </div>
+
+          <div class="testimonials__slide" data-slide="3">
+            <blockquote class="testimonials__quote">
+              &ldquo;The custom menu they created for our dinner party was perfection. Each drink paired beautifully with the courses. Our friends thought we'd hired a five-star mixologist.&rdquo;
+            </blockquote>
+            <div class="testimonials__attribution">
+              <span class="testimonials__name">Tolu & Kemi</span>
+              <span class="testimonials__event">Private Dinner Party</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__nav">
+          <button class="testimonials__arrow testimonials__arrow--prev" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="testimonials__dots">
+            <button class="testimonials__dot is-active" aria-label="Testimonial 1" data-dot="0"></button>
+            <button class="testimonials__dot" aria-label="Testimonial 2" data-dot="1"></button>
+            <button class="testimonials__dot" aria-label="Testimonial 3" data-dot="2"></button>
+            <button class="testimonials__dot" aria-label="Testimonial 4" data-dot="3"></button>
+          </div>
+          <button class="testimonials__arrow testimonials__arrow--next" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         GALLERY
+         ═══════════════════════════════════ -->
+    <section class="gallery section bg-cream-deep" id="gallery">
+      <div class="container">
+        <p class="section__label reveal" style="--stagger:0">Our Work</p>
+        <h2 class="section__heading reveal" style="--stagger:1">Moments We've Mixed</h2>
+
+        <div class="gallery__grid">
+          <div class="gallery__item reveal--scale" style="--stagger:1">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #DFFCED, #00C472 60%, #00945A); aspect-ratio: 4/5;"></div>
+            <div class="gallery__overlay"><span>Wedding Setup</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:2">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #FFD166, #FF8800 70%); aspect-ratio: 1/1;"></div>
+            <div class="gallery__overlay"><span>Tropical Sunset</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:3">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #FFE4E7, #FF4757 65%, #C62368); aspect-ratio: 3/4;"></div>
+            <div class="gallery__overlay"><span>Birthday Party</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:4">
+            <div class="gallery__placeholder" style="background: linear-gradient(150deg, #E6FFD6, #7ED321 50%, #00945A); aspect-ratio: 4/3;"></div>
+            <div class="gallery__overlay"><span>Emerald Garden</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:5">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #FFAB40, #FF4757 70%); aspect-ratio: 1/1;"></div>
+            <div class="gallery__overlay"><span>Corporate Event</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:6">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #FFF0D6, #FFAB40 50%, #FF8800); aspect-ratio: 5/4;"></div>
+            <div class="gallery__overlay"><span>Dinner Party</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:7">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #00C472, #7ED321 70%); aspect-ratio: 3/4;"></div>
+            <div class="gallery__overlay"><span>Garden Party</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:8">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #FF6B7A, #C62368 70%); aspect-ratio: 4/5;"></div>
+            <div class="gallery__overlay"><span>Bridal Shower</span></div>
+          </div>
+          <div class="gallery__item reveal--scale" style="--stagger:9">
+            <div class="gallery__placeholder" style="background: linear-gradient(135deg, #00BCD4, #00945A 70%); aspect-ratio: 1/1;"></div>
+            <div class="gallery__overlay"><span>Private Event</span></div>
+          </div>
+        </div>
+
+        <p class="gallery__cta reveal" style="--stagger:5">
+          Follow us <a href="#" class="gallery__cta-link" target="_blank" rel="noopener">@mocktailsbyify</a> on Instagram
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         BOOKING CTA
+         ═══════════════════════════════════ -->
+    <section class="cta-banner section" aria-label="Book your event">
+      <div class="cta-banner__bg" aria-hidden="true"></div>
+      <div class="container cta-banner__content">
+        <h2 class="cta-banner__heading reveal" style="--stagger:0">Let's Make Your Event Unforgettable</h2>
+        <p class="cta-banner__text reveal" style="--stagger:1">
+          Tell us about your upcoming celebration and we'll craft the perfect mocktail experience.
+        </p>
+        <a href="#contact" class="btn btn--white btn--large reveal" style="--stagger:2">Get a Free Quote</a>
+      </div>
+      <!-- Decorative corner elements -->
+      <svg class="cta-banner__leaf cta-banner__leaf--left" viewBox="0 0 100 150" fill="none" aria-hidden="true">
+        <path d="M50 5C50 5 10 50 10 90C10 120 28 145 50 145C72 145 90 120 90 90C90 50 50 5 50 5Z" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="none"/>
+        <path d="M50 25V135" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      </svg>
+      <svg class="cta-banner__leaf cta-banner__leaf--right" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+        <circle cx="40" cy="40" r="35" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+        <circle cx="40" cy="40" r="25" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+        <line x1="40" y1="10" x2="40" y2="70" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="10" y1="40" x2="70" y2="40" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      </svg>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         CONTACT FORM
+         ═══════════════════════════════════ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <p class="section__label reveal" style="--stagger:0">Get in Touch</p>
+        <h2 class="section__heading reveal" style="--stagger:1">Book Your Event</h2>
+
+        <div class="contact__grid">
+          <form class="contact__form reveal" style="--stagger:2" data-webhook-url="" novalidate>
+            <div class="contact__form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+                <span class="form-error" data-error="name">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email *</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required>
+                <span class="form-error" data-error="email">Please enter a valid email</span>
+              </div>
+            </div>
+
+            <div class="contact__form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+234 xxx xxx xxxx">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="event-type">Event Type *</label>
+                <select class="form-select" id="event-type" name="event_type" required>
+                  <option value="" disabled selected>Select your event</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="dinner">Dinner Party</option>
+                  <option value="private">Private Event</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-error" data-error="event_type">Please select an event type</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="event-date">Event Date</label>
+              <input class="form-input" type="date" id="event-date" name="event_date">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell Us More *</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Describe your event — guest count, theme, any flavors you love..." required></textarea>
+              <span class="form-error" data-error="message">Please tell us about your event</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large contact__submit">
+              Send Enquiry
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="contact__success" aria-live="polite" hidden>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="var(--palm)" stroke-width="1.5"/>
+                <path d="M8 12L11 15L16 9" stroke="var(--palm)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p>Thank you! We'll be in touch within 24 hours.</p>
+            </div>
+          </form>
+
+          <aside class="contact__sidebar reveal" style="--stagger:3">
+            <div class="contact__info-block">
+              <h4 class="contact__info-title">Contact Info</h4>
+              <div class="contact__info-item">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M3 5L10 11L17 5" stroke="var(--palm)" stroke-width="1.2" stroke-linecap="round"/>
+                  <rect x="2" y="4" width="16" height="12" rx="2" stroke="var(--palm)" stroke-width="1.2"/>
+                </svg>
+                <span>hello@mocktailsbyify.com</span>
+              </div>
+              <div class="contact__info-item">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M3 4.5C3 3.67 3.67 3 4.5 3H7.17C7.58 3 7.95 3.26 8.08 3.65L9.03 6.45C9.15 6.81 9.04 7.2 8.74 7.44L7.5 8.5C8.32 10.27 9.73 11.68 11.5 12.5L12.56 11.26C12.8 10.96 13.19 10.85 13.55 10.97L16.35 11.92C16.74 12.05 17 12.42 17 12.83V15.5C17 16.33 16.33 17 15.5 17C8.6 17 3 11.4 3 4.5Z" stroke="var(--palm)" stroke-width="1.2"/>
+                </svg>
+                <span>+234 801 234 5678</span>
+              </div>
+            </div>
+
+            <div class="contact__info-block">
+              <h4 class="contact__info-title">Hours</h4>
+              <p class="text-muted">Mon – Fri: 9am – 6pm</p>
+              <p class="text-muted">Sat: 10am – 4pm</p>
+              <p class="text-muted">Events: Any day, any time</p>
+            </div>
+
+            <div class="contact__info-block">
+              <h4 class="contact__info-title">Follow Us</h4>
+              <div class="contact__socials">
+                <a href="#" class="contact__social" aria-label="Instagram" target="_blank" rel="noopener">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <rect x="2" y="2" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.2"/>
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.2"/>
+                    <circle cx="14.5" cy="5.5" r="1" fill="currentColor"/>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social" aria-label="TikTok" target="_blank" rel="noopener">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 2V13.5C10 15.16 8.66 16.5 7 16.5C5.34 16.5 4 15.16 4 13.5C4 11.84 5.34 10.5 7 10.5C7.35 10.5 7.68 10.56 8 10.67V8.1C7.67 8.04 7.34 8 7 8C3.96 8 1.5 10.46 1.5 13.5C1.5 16.54 3.96 19 7 19C10.04 19 12.5 16.54 12.5 13.5V7.5C13.6 8.44 15 9 16.5 9V6.5C14.57 6.5 12.94 5.38 12.5 3.5V2H10Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                  </svg>
+                </a>
+                <a href="#" class="contact__social" aria-label="Twitter / X" target="_blank" rel="noopener">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M3 3L8.5 10.5M8.5 10.5L3 17H5L9.5 11.5L13 17H17L11.5 9.5M8.5 10.5L12.5 5H17L11.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════ -->
+  <footer class="footer bg-bark" role="contentinfo">
+    <div class="footer__accent" aria-hidden="true"></div>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo" aria-label="mocktailsbyify home">
+            <span class="footer__logo-mock">mocktails</span><span class="footer__logo-byify">byify</span>
+          </a>
+          <p class="footer__tagline">Premium mocktail catering for life's best moments. Crafted with care, served with joy.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Quick Links</h4>
+          <nav aria-label="Footer navigation">
+            <a href="#about" class="footer__link">About</a>
+            <a href="#services" class="footer__link">Services</a>
+            <a href="#menu" class="footer__link">Menu</a>
+            <a href="#testimonials" class="footer__link">Reviews</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Services</h4>
+          <a href="#services" class="footer__link">Weddings</a>
+          <a href="#services" class="footer__link">Birthday Parties</a>
+          <a href="#services" class="footer__link">Corporate Events</a>
+          <a href="#services" class="footer__link">Dinner Parties</a>
+          <a href="#services" class="footer__link">Private Events</a>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <a href="mailto:hello@mocktailsbyify.com" class="footer__link">hello@mocktailsbyify.com</a>
+          <a href="tel:+2348012345678" class="footer__link">+234 801 234 5678</a>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <rect x="2" y="2" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.2"/>
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.2"/>
+                <circle cx="14.5" cy="5.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2V13.5C10 15.16 8.66 16.5 7 16.5C5.34 16.5 4 15.16 4 13.5C4 11.84 5.34 10.5 7 10.5C7.35 10.5 7.68 10.56 8 10.67V8.1C7.67 8.04 7.34 8 7 8C3.96 8 1.5 10.46 1.5 13.5C1.5 16.54 3.96 19 7 19C10.04 19 12.5 16.54 12.5 13.5V7.5C13.6 8.44 15 9 16.5 9V6.5C14.57 6.5 12.94 5.38 12.5 3.5V2H10Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                <path d="M3 3L8.5 10.5M8.5 10.5L3 17H5L9.5 11.5L13 17H17L11.5 9.5M8.5 10.5L12.5 5H17L11.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 mocktailsbyify. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

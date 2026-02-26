@@ -1,0 +1,84 @@
+:root {
+  /* ——— Colors ——— */
+  --cream: #FFFDF7;
+  --cream-deep: #FFF5E6;
+
+  --bark: #1A0F08;
+  --bark-light: #3D2518;
+  --bark-muted: #7A5C42;
+
+  --palm: #00945A;
+  --palm-light: #00C472;
+  --palm-pale: #DFFCED;
+
+  --citrus: #FF8800;
+  --citrus-light: #FFAB40;
+  --citrus-pale: #FFF0D6;
+
+  --coral: #FF4757;
+  --coral-light: #FF6B7A;
+  --coral-pale: #FFE4E7;
+
+  --lime: #7ED321;
+
+  --white: #FFFFFF;
+
+  --tropical-blue: #00BCD4;
+  --berry: #C62368;
+
+  /* ——— Typography ——— */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Nunito Sans', 'Segoe UI', sans-serif;
+
+  /* ——— Font Sizes (fluid) ——— */
+  --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
+  --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
+  --text-base: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
+  --text-md: clamp(1.05rem, 0.95rem + 0.5vw, 1.2rem);
+  --text-lg: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
+  --text-2xl: clamp(1.8rem, 1.4rem + 2vw, 2.5rem);
+  --text-3xl: clamp(2.2rem, 1.6rem + 3vw, 3.5rem);
+  --text-hero: clamp(2.5rem, 1.8rem + 3.5vw, 5.5rem);
+
+  /* ——— Spacing ——— */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+  --section-pad: clamp(4rem, 3rem + 5vw, 8rem);
+
+  /* ——— Borders & Radii ——— */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-full: 9999px;
+
+  /* ——— Shadows ——— */
+  --shadow-sm: 0 2px 6px rgba(26, 15, 8, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 15, 8, 0.1);
+  --shadow-lg: 0 8px 30px rgba(26, 15, 8, 0.14);
+  --shadow-xl: 0 20px 60px rgba(26, 15, 8, 0.16);
+  --shadow-warm: 0 8px 30px rgba(255, 136, 0, 0.18);
+  --shadow-glow-palm: 0 4px 20px rgba(0, 148, 90, 0.2);
+  --shadow-glow-coral: 0 4px 20px rgba(255, 71, 87, 0.2);
+  --shadow-glow-citrus: 0 4px 20px rgba(255, 136, 0, 0.2);
+
+  /* ——— Transitions ——— */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+  --duration-fast: 200ms;
+  --duration-base: 350ms;
+  --duration-slow: 600ms;
+
+  /* ——— Layout ——— */
+  --container-max: 1200px;
+  --container-wide: 1400px;
+  --container-narrow: 800px;
+}
