@@ -80,16 +80,13 @@
   0% {
     opacity: 0;
     transform: translateY(100%) rotateX(-80deg);
-    filter: blur(6px);
   }
   60% {
     opacity: 1;
-    filter: blur(0);
   }
   100% {
     opacity: 1;
     transform: translateY(0) rotateX(0);
-    filter: blur(0);
   }
 }
 
@@ -104,10 +101,10 @@
 
 @keyframes accentGlow {
   0%, 100% {
-    text-shadow: 0 0 8px rgba(0, 148, 90, 0.3);
+    text-shadow: none;
   }
   50% {
-    text-shadow: 0 0 25px rgba(0, 148, 90, 0.45), 0 0 50px rgba(255, 136, 0, 0.2);
+    text-shadow: none;
   }
 }
 
@@ -282,8 +279,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: accentShimmer 4s ease-in-out infinite 1.5s,
-             accentGlow 3s ease-in-out infinite 2s;
+  animation: accentShimmer 4s ease-in-out infinite 1.5s;
 }
 
 .hero__subtitle {
