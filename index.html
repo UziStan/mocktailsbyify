@@ -51,7 +51,7 @@
         <a href="#contact" class="nav__link">Contact</a>
       </nav>
 
-      <a href="#contact" class="btn btn--primary nav__cta">Book Your Event</a>
+      <a href="#contact" class="btn btn--primary nav__cta magnetic" data-magnetic-strength="0.2">Book Your Event</a>
 
       <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <span class="nav__hamburger-line"></span>
@@ -80,7 +80,7 @@
     <!-- ═══════════════════════════════════
          HERO
          ═══════════════════════════════════ -->
-    <section class="hero section" id="hero">
+    <section class="hero section parallax-section" id="hero">
       <!-- Decorative blobs -->
       <div class="hero__blobs" aria-hidden="true">
         <div class="hero__blob hero__blob--1"></div>
@@ -104,6 +104,16 @@
         </svg>
       </div>
 
+      <!-- Floating particles -->
+      <div class="hero__particles" aria-hidden="true">
+        <div class="hero__particle hero__particle--1"></div>
+        <div class="hero__particle hero__particle--2"></div>
+        <div class="hero__particle hero__particle--3"></div>
+        <div class="hero__particle hero__particle--4"></div>
+        <div class="hero__particle hero__particle--5"></div>
+        <div class="hero__particle hero__particle--6"></div>
+      </div>
+
       <div class="container hero__content">
         <p class="hero__label">Mocktail Catering for Life's Best Moments</p>
         <h1 class="hero__heading">
@@ -113,8 +123,8 @@
           We craft bespoke non-alcoholic cocktails that delight your guests and elevate any occasion — from intimate dinners to grand weddings.
         </p>
         <div class="hero__ctas">
-          <a href="#menu" class="btn btn--primary btn--large">See Our Drinks</a>
-          <a href="#contact" class="btn btn--outline btn--large">Book an Event</a>
+          <a href="#menu" class="btn btn--primary btn--large magnetic">See Our Drinks</a>
+          <a href="#contact" class="btn btn--outline btn--large magnetic">Book an Event</a>
         </div>
       </div>
 
@@ -149,10 +159,10 @@
             </p>
           </div>
           <div class="about__visual reveal--scale" style="--stagger:2" aria-hidden="true">
-            <div class="about__circle about__circle--citrus"></div>
-            <div class="about__circle about__circle--palm"></div>
-            <div class="about__circle about__circle--coral"></div>
-            <div class="about__circle about__circle--lime"></div>
+            <div class="about__circle about__circle--citrus" data-parallax="-0.06"></div>
+            <div class="about__circle about__circle--palm" data-parallax="0.08"></div>
+            <div class="about__circle about__circle--coral" data-parallax="-0.04"></div>
+            <div class="about__circle about__circle--lime" data-parallax="0.1"></div>
           </div>
         </div>
 
@@ -502,14 +512,14 @@
         <p class="cta-banner__text reveal" style="--stagger:1">
           Tell us about your upcoming celebration and we'll craft the perfect mocktail experience.
         </p>
-        <a href="#contact" class="btn btn--white btn--large reveal" style="--stagger:2">Get a Free Quote</a>
+        <a href="#contact" class="btn btn--white btn--large reveal magnetic" style="--stagger:2">Get a Free Quote</a>
       </div>
       <!-- Decorative corner elements -->
-      <svg class="cta-banner__leaf cta-banner__leaf--left" viewBox="0 0 100 150" fill="none" aria-hidden="true">
+      <svg class="cta-banner__leaf cta-banner__leaf--left" viewBox="0 0 100 150" fill="none" aria-hidden="true" data-parallax="-0.08">
         <path d="M50 5C50 5 10 50 10 90C10 120 28 145 50 145C72 145 90 120 90 90C90 50 50 5 50 5Z" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="none"/>
         <path d="M50 25V135" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
       </svg>
-      <svg class="cta-banner__leaf cta-banner__leaf--right" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+      <svg class="cta-banner__leaf cta-banner__leaf--right" viewBox="0 0 80 80" fill="none" aria-hidden="true" data-parallax="0.06">
         <circle cx="40" cy="40" r="35" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
         <circle cx="40" cy="40" r="25" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
         <line x1="40" y1="10" x2="40" y2="70" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
@@ -615,19 +625,19 @@
             <div class="contact__info-block">
               <h4 class="contact__info-title">Follow Us</h4>
               <div class="contact__socials">
-                <a href="#" class="contact__social" aria-label="Instagram" target="_blank" rel="noopener">
+                <a href="#" class="contact__social magnetic" data-magnetic-strength="0.4" aria-label="Instagram" target="_blank" rel="noopener">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <rect x="2" y="2" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.2"/>
                     <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.2"/>
                     <circle cx="14.5" cy="5.5" r="1" fill="currentColor"/>
                   </svg>
                 </a>
-                <a href="#" class="contact__social" aria-label="TikTok" target="_blank" rel="noopener">
+                <a href="#" class="contact__social magnetic" data-magnetic-strength="0.4" aria-label="TikTok" target="_blank" rel="noopener">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M10 2V13.5C10 15.16 8.66 16.5 7 16.5C5.34 16.5 4 15.16 4 13.5C4 11.84 5.34 10.5 7 10.5C7.35 10.5 7.68 10.56 8 10.67V8.1C7.67 8.04 7.34 8 7 8C3.96 8 1.5 10.46 1.5 13.5C1.5 16.54 3.96 19 7 19C10.04 19 12.5 16.54 12.5 13.5V7.5C13.6 8.44 15 9 16.5 9V6.5C14.57 6.5 12.94 5.38 12.5 3.5V2H10Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
                   </svg>
                 </a>
-                <a href="#" class="contact__social" aria-label="Twitter / X" target="_blank" rel="noopener">
+                <a href="#" class="contact__social magnetic" data-magnetic-strength="0.4" aria-label="Twitter / X" target="_blank" rel="noopener">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M3 3L8.5 10.5M8.5 10.5L3 17H5L9.5 11.5L13 17H17L11.5 9.5M8.5 10.5L12.5 5H17L11.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>

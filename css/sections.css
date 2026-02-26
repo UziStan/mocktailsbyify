@@ -278,7 +278,6 @@
 
 .hero__accent {
   font-style: italic;
-  color: var(--coral);
 }
 
 .hero__subtitle {
@@ -489,7 +488,7 @@
 }
 
 .services__card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -917,7 +916,7 @@
 }
 
 .gallery__item:hover {
-  transform: scale(1.02);
+  transform: scale(1.04) rotate(-0.5deg);
   box-shadow: var(--shadow-lg);
 }
 
