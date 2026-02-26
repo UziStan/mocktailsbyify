@@ -267,6 +267,11 @@
 }
 
 .hero__accent {
+  font-style: italic;
+}
+
+.hero__accent,
+.hero__accent .hero-word {
   background: linear-gradient(
     90deg,
     var(--palm) 0%,
@@ -279,7 +284,13 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: var(--palm);
   animation: accentShimmer 4s ease-in-out infinite 1.5s;
+}
+
+.hero__accent .hero-word {
+  animation: heroWordReveal 0.7s var(--ease-out) both,
+             accentShimmer 4s ease-in-out infinite 1.5s;
 }
 
 .hero__subtitle {
